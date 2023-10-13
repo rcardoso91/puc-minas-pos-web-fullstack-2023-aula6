@@ -1,0 +1,94 @@
+/* Estilos para o título */
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilos para o formulário */
+#locationForm {
+    text-align: center;
+    margin-top: 20px;
+    /* Espaçamento superior para melhor organização */
+}
+
+#getWeatherButton {
+    background-color: #2e8b57;
+    border-color: #2e8b57;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#getWeatherButton:hover {
+    background-color: #228b22;
+}
+
+/* Estilos para a seção de resultados */
+#weatherResult {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /* Espaçamento inferior para o rodapé */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilos para os resultados de temperatura e localização */
+.weather-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.weather-detail i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.detail-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para tornar o rodapé responsivo */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+        /* Reduzido ainda mais o padding para telas menores */
+    }
+}
+
+/* Espaçamento entre o rodapé e o conteúdo */
+#weatherResult {
+    margin-bottom: 150px;
+    /* Aumente o espaço entre o conteúdo e o rodapé */
+}

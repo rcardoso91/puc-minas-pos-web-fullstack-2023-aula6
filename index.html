@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Inclua o link para o FontAwesome aqui -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">Previsão do Tempo</h1>
+
+        <!-- Formulário para entrada da localização -->
+        <form id="locationForm" class="mt-4">
+            <button type="button" class="btn btn-primary" id="getWeatherButton">Obter Previsão do Tempo</button>
+        </form>
+
+
+        <div id="weatherResult" class="mt-4">
+
+            <div class="weather-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="detail-label"><b>Cidade:</b></span>
+                <span id="cityName"></span>
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-globe"></i>
+                <span class="detail-label"><b>Latitude:</b></span>
+                <span id="latValue"></span>°
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-globe"></i>
+                <span class="detail-label"><b>Longitude:</b></span>
+                <span id="longValue"></span>°
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-thermometer-half"></i> <!-- Ícone de temperatura -->
+                <span class="detail-label">Temperatura:</span>
+                <span id="temperature"></span>°C
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-cloud"></i> <!-- Ícone de clima -->
+                <span class="detail-label">Clima:</span>
+                <span id="weatherDescription"></span>
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-thermometer-empty"></i> <!-- Ícone de temperatura mínima -->
+                <span class="detail-label">Temperatura Mínima:</span>
+                <span id="tempMin"></span>°C
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-thermometer-full"></i> <!-- Ícone de temperatura máxima -->
+                <span class="detail-label">Temperatura Máxima:</span>
+                <span id="tempMax"></span>°C
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-wind"></i> <!-- Ícone de vento -->
+                <span class="detail-label">Vento:</span>
+                <span id="windSpeed"></span> km/h
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-humidity"></i> <!-- Ícone de umidade -->
+                <span class="detail-label">Umidade:</span>
+                <span id="humidity"></span>%
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-sun"></i> <!-- Ícone de sol -->
+                <span class="detail-label">Sol:</span>
+                Nascer do Sol: <span id="sunrise"></span> Pôr do Sol: <span id="sunset"></span>
+            </div>
+
+            <div class="weather-detail">
+                <i class="fas fa-tachometer-alt"></i> <!-- Ícone de pressão -->
+                <span class="detail-label">Pressão:</span>
+                <span id="pressure"></span> hPa
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-globe-americas"></i> <!-- Ícone de fuso horário -->
+                <span class="detail-label">Fuso Horário:</span>
+                <span id="timezone"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Previsão do Tempo</p>
+        </div>
+    </footer>
+
+    <!-- Inclua os scripts no final do corpo do documento para melhorar o desempenho -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
